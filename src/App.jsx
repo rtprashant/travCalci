@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 
 
-import InputBox from './components/InputBox'
+import InputBox from './pages/InputBox'
 
 import AboutPage from './pages/AboutPage' // Assuming this path is correct
 import ContactPage from './pages/ContactPage'
