@@ -1,17 +1,27 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
+import AboutPage from './pages/AboutPage' // Assuming this path is correct
+import ContactPage from './pages/ContactPage'
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-50">
+      {/* 1. Changed to a subtle gradient background */}
+      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100">
         <Header />
-        <Routes>
-          <Route path="/" element={<div className="p-8">Home Page</div>} />
-          <Route path="/trips" element={<div className="p-8">Trips Page</div>} />
-          <Route path="/about" element={<div className="p-8">About Page</div>} />
-          <Route path="/contact" element={<div className="p-8">Contact Page</div>} />
-        </Routes>
+        
+        {/* 2. Set the global top padding here to clear the fixed header */}
+        <main className="">
+          <Routes>
+            <Route path="/" element={<div className="p-8">Home Page</div>} />
+            {/* <Route path="/trips" element={<div className="p-8">Trips Page</div>} /> */}
+            
+            <Route path="/about" element={<AboutPage />} />
+            
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
+        
       </div>
     </BrowserRouter>
   )
