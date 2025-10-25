@@ -4,9 +4,6 @@ import { LocationIcon, MailIcon, PhoneIcon } from '../components/icons/Icon';
 
 // --- Re-usable Icons ---
 
-
-
-
 // --- Animation Variants ---
 
 const fadeIn = {
@@ -52,9 +49,7 @@ function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic here
-    // For this demo, we'll just log it
     console.log("Form submitted!");
-    // You could show a success message here
   };
 
   return (
@@ -99,10 +94,10 @@ function ContactPage() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-gray-900">Email</h3>
-                <p className="text-lg text-gray-600 mt-1">
+                <p className="text-base text-gray-600 mt-1"> {/* <-- Changed from text-lg */}
                   General Inquiries:
                 </p>
-                <a href="mailto:support@travcalci.com" className="text-lg text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                <a href="mailto:support@travcalci.com" className="text-base text-blue-600 hover:text-blue-800 transition-colors duration-200"> {/* <-- Changed from text-lg */}
                   support@travelory.com
                 </a>
               </div>
@@ -114,10 +109,10 @@ function ContactPage() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-gray-900">Phone</h3>
-                <p className="text-lg text-gray-600 mt-1">
+                <p className="text-base text-gray-600 mt-1"> {/* <-- Changed from text-lg */}
                   Mon-Fri, 9am-5pm EST:
                 </p>
-                <a href="tel:+1234567890" className="text-lg text-blue-600 hover:text-blue-800 transition-colors duration-200">
+                <a href="tel:+1234567890" className="text-base text-blue-600 hover:text-blue-800 transition-colors duration-200"> {/* <-- Changed from text-lg */}
                   +1 (234) 567-890
                 </a>
               </div>
@@ -129,7 +124,7 @@ function ContactPage() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-gray-900">Office</h3>
-                <p className="text-lg text-gray-600 mt-1">
+                <p className="text-base text-gray-600 mt-1"> {/* <-- Changed from text-lg */}
                   123 Travel Lane
                   <br />
                   Adventure City, TS 54321
@@ -149,7 +144,7 @@ function ContactPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8">Send Us a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-lg font-medium text-gray-700">
+                <label htmlFor="name" className="block text-base font-medium text-gray-700"> {/* <-- Changed from text-lg */}
                   Full Name
                 </label>
                 <input
@@ -157,12 +152,12 @@ function ContactPage() {
                   id="name"
                   name="name"
                   required
-                  className="mt-2 block w-full px-4 py-3 text-lg border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-2 block w-full px-4 py-3 text-base border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" // <-- Changed from text-lg
                 />
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-lg font-medium text-gray-700">
+                <label htmlFor="email" className="block text-base font-medium text-gray-700"> {/* <-- Changed from text-lg */}
                   Email Address
                 </label>
                 <input
@@ -170,12 +165,12 @@ function ContactPage() {
                   id="email"
                   name="email"
                   required
-                  className="mt-2 block w-full px-4 py-3 text-lg border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-2 block w-full px-4 py-3 text-base border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" // <-- Changed from text-lg
                 />
               </div>
               
               <div>
-                <label htmlFor="subject" className="block text-lg font-medium text-gray-700">
+                <label htmlFor="subject" className="block text-base font-medium text-gray-700"> {/* <-- Changed from text-lg */}
                   Subject
                 </label>
                 <input
@@ -183,12 +178,12 @@ function ContactPage() {
                   id="subject"
                   name="subject"
                   required
-                  className="mt-2 block w-full px-4 py-3 text-lg border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-2 block w-full px-4 py-3 text-base border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" // <-- Changed from text-lg
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-lg font-medium text-gray-700">
+                <label htmlFor="message" className="block text-base font-medium text-gray-700"> {/* <-- Changed from text-lg */}
                   Message
                 </label>
                 <textarea
@@ -196,14 +191,14 @@ function ContactPage() {
                   name="message"
                   rows={5}
                   required
-                  className="mt-2 block w-full px-4 py-3 text-lg border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-2 block w-full px-4 py-3 text-base border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500" // <-- Changed from text-lg
                 />
               </div>
 
               <div>
                 <motion.button
                   type="submit"
-                  className="w-full inline-flex justify-center py-3 px-6 border border-transparent shadow-lg text-lg font-bold rounded-xl text-white bg-gradient-to-r from-blue-400 to-blue-800"
+                  className="w-full inline-flex justify-center py-3 px-6 border border-transparent shadow-lg text-base font-bold rounded-xl text-white bg-gradient-to-r from-blue-400 to-blue-800" // <-- Changed from text-lg
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.98 }}
                   transition={{ duration: 0.2, ease: "easeInOut" }}
