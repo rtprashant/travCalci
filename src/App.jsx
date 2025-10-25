@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className='bg-red-400'>
-      working fine
+      working  fie hae a good day
     </div>
   )
 }
