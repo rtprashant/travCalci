@@ -103,7 +103,7 @@ function ContactPage() {
                   General Inquiries:
                 </p>
                 <a href="mailto:support@travcalci.com" className="text-lg text-blue-600 hover:text-blue-800 transition-colors duration-200">
-                  support@travcalci.com
+                  support@travelory.com
                 </a>
               </div>
             </div>

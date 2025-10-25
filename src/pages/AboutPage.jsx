@@ -85,7 +85,7 @@ function AboutPage() {
           variants={fadeIn}
         >
           <h1 className="text-5xl md:text-6xl font-extrabold italic tracking-wide">
-            About TravCalci
+            About Travelory
           </h1>
           <p className="text-xl md:text-2xl text-blue-100 mt-4 max-w-3xl mx-auto">
             We believe planning a trip should be as exciting as the journey itself.
@@ -104,14 +104,14 @@ function AboutPage() {
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
             <p className="text-lg text-gray-600 mb-4">
-              At TravCalci, our mission is to simplify the complexities of
+              At Travelory, our mission is to simplify the complexities of
               travel budgeting and expense tracking. We empower you to focus on
               creating unforgettable memories, not crunching numbers.
             </p>
             <p className="text-lg text-gray-600">
               We started with a simple idea: what if you could calculate all your
               trip costs, manage group expenses, and discover new destinations all
-              in one place? That idea became TravCalci.
+              in one place? That idea became Travelory.
             </p>
           </motion.div>
           <motion.div
@@ -180,7 +180,7 @@ function AboutPage() {
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Meet the Team</h2>
             <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-              The passionate individuals behind TravCalci.
+              The passionate individuals behind Travelory.
             </p>
           </motion.div>
 
@@ -221,7 +221,7 @@ function AboutPage() {
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">Ready to Plan Your Next Adventure?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Join thousands of travelers who use TravCalci to manage their trips with ease.
+            Join thousands of travelers who use Travelory to manage their trips with ease.
           </p>
           <motion.a
             href="/contact" // Changed to a standard <a> tag

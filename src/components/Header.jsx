@@ -85,7 +85,7 @@ function Header() {
               layout
               className="text-2xl sm:text-3xl font-extrabold italic tracking-wide"
             >
-              TravCalci
+              Travelory
             </motion.h1>
             <motion.span
               layout
