@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 // Define nav items with their paths
 const navLinks = [
   { name: "Home", path: "/" },
-//   { name: "Trips", path: "/trips" },
+  { name: "Trips", path: "/trips" },
   { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" },
 ];

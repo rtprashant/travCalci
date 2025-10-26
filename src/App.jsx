@@ -1,11 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
+import Footer from './components/Footer'
+import { lazy } from 'react'
+import { Suspense } from 'react'
+const InputBox = lazy(() => import('./pages/InputBox'))
+const ItineraryPage = lazy(() => import('./pages/ItenaryPage'))
+const AboutPage = lazy(() => import('./pages/AboutPage'))
+const ContactPage = lazy(() => import('./pages/ContactPage'))
+const PlanYourTripPage = lazy(() => import('./pages/PlanYourTrip'))
 
 
-import InputBox from './pages/InputBox'
 
-import AboutPage from './pages/AboutPage' // Assuming this path is correct
-import ContactPage from './pages/ContactPage'
 
 function App() {
   return (
@@ -14,19 +19,19 @@ function App() {
       {/* 1. Changed to a subtle gradient background */}
       <div className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100">
         <Header />
-        
+        <Suspense fallback={<div>Loading...</div>}>
         {/* 2. Set the global top padding here to clear the fixed header */}
         <main className="">
           <Routes>
             <Route path="/" element={ <InputBox/>} />
-            {/* <Route path="/trips" element={<div className="p-8">Trips Page</div>} /> */}
-            
+            <Route path="/trips" element={<ItineraryPage />} />
             <Route path="/about" element={<AboutPage />} />
-            
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/planYourTrip" element={ <PlanYourTripPage />} />
           </Routes>
         </main>
-        
+        </Suspense>
+        <Footer />
       </div>
     </BrowserRouter>
    

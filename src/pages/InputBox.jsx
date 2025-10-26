@@ -318,7 +318,7 @@ export default function InputBox() {
               Join thousands of travelers who use Travelory to manage their trips with ease.
             </p>
             <motion.a
-              href="#" // This would go to your signup page
+              href="/planYourTrip" // This would go to your signup page
               className="inline-block bg-white text-blue-700 font-bold text-lg px-10 py-4 rounded-xl shadow-2xl hover:bg-blue-50"
               whileHover={{ scale: 1.05, y: -5 }}
               transition={{ duration: 0.2, ease: "easeInOut" }}
